@@ -1,4 +1,4 @@
-import {test, expect} from '@playwright/test'
+const { test, expect } = require('@playwright/test');
 
 test('Get User ApI', async({request})=>{
     const response = await request.get('https://jsonplaceholder.typicode.com/users/1');
