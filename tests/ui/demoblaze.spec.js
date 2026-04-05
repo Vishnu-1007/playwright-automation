@@ -1,4 +1,4 @@
-import DemoBlazer from "./pages/DemoBlazePage";
+import DemoBlazer from "../../pages/DemoBlazePage";
 import {test, expect} from '@playwright/test'
 
 

@@ -1,5 +1,5 @@
 const { test, expect } = require('@playwright/test');
-const Saucedemo = require('./pages/pages/SauceDemoPage');
+const Saucedemo = require('../../pages/SauceDemoPage');
 
 test.describe('test for login and logout etc', () => {
 
@@ -26,5 +26,9 @@ test.describe('test for login and logout etc', () => {
         await saucedemo.logout();
         await expect(page).toHaveURL('https://www.saucedemo.com/');
     });
+
+    test.afterEach(async({page})=>{
+        console.log('Test finished -current url', page.url())
+    })
 
 });

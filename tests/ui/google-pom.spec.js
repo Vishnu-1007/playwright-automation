@@ -1,5 +1,5 @@
 const {test, expect} = require('@playwright/test');
-const GooglePage = require('./pages/pages/GooglePage');
+const GooglePage = require('../../pages/GooglePage');
 
 test('search using Page Object Model', async({page})=>{
     const google = new GooglePage(page);
