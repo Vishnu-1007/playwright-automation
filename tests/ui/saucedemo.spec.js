@@ -8,6 +8,10 @@ const password = loginCreds.saucedemo.validUser.password;
 
 test.describe('test for login and logout etc', () => {
 
+    test.beforeAll('before the test start', async()=>{
+        console.log('start for the test case')
+    })
+
     test.beforeEach(async ({ page }) => {
         // const saucedemo = new Saucedemo(page);
         // await saucedemo.navigate();
